@@ -1,0 +1,240 @@
+@import url("styles.css");
+
+:root{
+    --fs-poppins:'Poppins', sans-serif;
+    --fs-heebo:'Heebo', sans-serif;
+    --fw-light:400;
+    --fw-reg:500;
+    --fw-semi-bold:700;
+    --fw-bold:800;
+    --fw-extra-light:300;
+
+    --headings-color:#333333;
+    --light-blue:#2D9CDB;
+    --para-underneath-firstimg-color:#4F4F4F;
+    --advert-contact-clr-input-background:#4F4F4F;
+    --join-clr:#F2F2F2;
+    --get-started-bacclr:#828282;
+    --red-clr:#EB5757;
+    --footings-text-clr:#FFFFFF; 
+    --footers-background-clr:#100E1D;
+    --icon-heading-color:#000000;
+    --email-clr-write:rgba(32, 33, 92, 0.854);
+    --red-color-back:#EB5757;
+    --green-clr-back:#27AE60;
+    --light-blue-clr-back:#2D9CDB;
+    --form-backgorund-color:rgba(241, 241, 240, 0.854);
+}
+
+@media (min-width:565px) {
+    .same-style-container-for-projects{
+        & .applications-used{
+            text-align: center;
+
+        }
+        & .name-of-application{
+            text-align: center;
+        }
+
+    }
+    
+}
+
+@media (min-width : 1440px){
+    header{
+        padding: 2.625rem 3.2rem;
+        & .profile-name-session{
+            & .profile-name{
+                font-size: clamp(2.25rem, 2.5vw, 2.5rem);
+                
+            }
+        }
+        & .navbar-menu-icon{
+            & .fa-bars{
+                display: none;
+            }
+            & #navbar {
+                display: block;
+
+                & ul{
+                    display: flex;
+                    list-style: none;
+                    column-gap: 2rem;
+
+                    & li > a{
+                        text-decoration: none;
+                        font-family: var(--fs-poppins);
+                        color: var(--headings-color);
+                        font-weight: var(--fw-reg);
+                        font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+
+                        &:hover, :active , :focus{
+                            background-color: var(--footers-background-clr);
+                            border-radius: 1rem;
+                            color: var(--footings-text-clr);
+                            padding: 0.7rem;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section#home{
+        & .first-text-in-home-section{
+            font-size: clamp(1.125rem, 1.2vw, 1.2rem);
+            padding: 0rem 0rem 0rem clamp(17.3125rem, 17.4vw, 17.4rem);
+        }
+        & h1{
+            font-size: clamp(3rem, 3vw, 3.1rem);
+            padding: 0rem clamp(37rem, 39vw, 40rem) 0rem clamp(17.3125rem, 17.4vw, 17.4rem);
+        }
+        & .emotions-text{
+            font-size: clamp(3rem, 3vw, 3.1rem);
+            padding: 0rem clamp(50rem, 51vw, 53rem) 0rem clamp(17.3125rem, 17.4vw, 17.4rem);
+        }
+        & .talking-about-transformation{
+            font-size: clamp(1.125rem , 1.2vw, 1.2rem);
+            line-height: 1.6875rem;
+            padding: 0rem clamp(50rem, 55vw, 60rem) 0rem clamp(17.3125rem, 17.4vw, 17.4rem);
+        }
+        & .emial-submission-and-text-talking-about-contact{
+            padding: 0rem clamp(37rem, 39vw, 40rem) 0rem clamp(17.3125rem, 17.4vw, 17.4rem);
+
+            & .to-contact-through{
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    form{
+        width:clamp(21.875rem , 21.9vw, 22rem);
+        height:clamp(3.5625rem ,3.6vw, 3.6rem);
+    }
+    section#services{
+        & h2{
+            font-size: clamp(2.25rem, 2.3vw, 2.3rem);
+            padding: 0rem clamp(55rem, 60.5vw, 61rem) 
+            0rem clamp(10.3125rem, 10.4vw, 10.4rem);
+        }
+        & .three-services-being-offered{
+            display: flex;
+            flex-direction: row;
+            padding: 0rem 0rem 0rem clamp(10.3125rem, 10.4vw, 10.4rem);
+            column-gap: clamp(3.5rem, 4vw, 4rem);
+        }
+    }
+    section#ourworks{
+        & h3{
+            font-size: clamp(2.25rem, 2.25vw, 2.3rem);
+            padding: 0rem clamp(45rem, 47vw, 50rem) 0rem clamp(10.3125rem, 10.4vw, 10.4rem);
+        }
+        & .images-of-project-created-by-team{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 0rem clamp(6rem, 6vw, 6.5rem) 0rem clamp(10.3125rem, 10.4vw, 10.4rem);
+            column-gap: 0rem;
+            row-gap: 0rem;
+
+            & .frist-two-images-of-project-created-by-team{
+                display: flex;
+                flex-direction: column;
+                column-gap: 0.5rem;
+                margin-top: 9rem;
+                row-gap: 8rem;
+                /* background-color: red; */
+                
+                
+            }
+            & .last-two-images-of-project-created-by-team{
+                row-gap: 6rem;
+                margin-bottom: 6rem;
+                 
+            }
+        }
+
+    }
+
+    .show-more-projects-icon{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        
+    }
+    .same-style-container-for-projects{
+        & .applications-used{
+            font-size: 0.875rem;
+            text-align: left;
+        }
+        & .name-of-application{
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+    }
+
+    section#clients{
+        & .meet-the-team-with-photos-of-them-container{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            padding: 0rem clamp(10.3125rem, 10.4vw, 10.4rem) 
+            0rem clamp(12rem, 13vw, 13rem);
+            place-items: center;
+            column-gap: clamp(7rem, 7vw ,8rem );
+
+            & .meet-the-team-session{
+                & .intro-to-meet-tem-para{
+                    padding: 0rem;
+                }
+                & h3{
+                    padding: 0rem 3rem 0rem 0rem;
+                    
+                }
+                & .paragraph-undeaneth-h3{
+                    padding: 0rem 30% 0rem 0rem;
+                }
+            }
+        }
+
+        & .comment-from-clients-with-image{
+            padding: 0rem 0rem 
+                0rem clamp(10.3125rem, 10.4vw, 10.4rem);
+            & .the-comment{
+                font-size: clamp(2.25rem , 2.3vw , 2.3rem);
+                padding: 0rem clamp(19rem , 20vw , 21rem)
+                0rem 0rem;
+                line-height: 3.375rem;
+            }
+        }
+    }
+    .another-style-contact{
+        color: var(--footings-text-clr);
+        font-size: 0.875rem;
+        
+    }
+
+    footer#contact{
+        padding: 3rem clamp(4rem, 5vw, 5rem) 
+        7rem clamp(10.3125rem, 10.4vw, 10.4rem);
+
+        & .footer-contents-with-email-submission{
+            display: grid;
+            grid-template-columns: 30% 35% 30%;
+
+            & .social-icons-with-header-name{
+                display: flex;
+                flex-direction: column;
+
+                & .social-icons{
+                    display: flex;
+                    justify-content: flex-start;
+                    
+                }
+            }
+        }
+
+    }
+
+    
+}
