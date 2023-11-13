@@ -69,7 +69,7 @@ header{
     margin-bottom: 1.5rem;
 
     & .profile-name-session{
-        & .profile-name{
+        & #profile-name{
             font-family: var(--fs-heebo);
             font-weight: var(--fw-bold);
             font-size: clamp(1.5rem , 1.6vw , 1.8rem);

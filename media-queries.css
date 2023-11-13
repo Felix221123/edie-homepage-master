@@ -44,7 +44,7 @@
     header{
         padding: 2.625rem 3.2rem;
         & .profile-name-session{
-            & .profile-name{
+            & #profile-name{
                 font-size: clamp(2.25rem, 2.5vw, 2.5rem);
                 
             }
@@ -69,11 +69,9 @@
                         font-size: clamp(1.4rem, 1.5vw, 1.5rem);
 
                         &:hover, :active , :focus{
-                            background-color: var(--footers-background-clr);
-                            border-radius: 1rem;
-                            color: var(--footings-text-clr);
-                            padding: 0.7rem;
-                            transition: 0.5s;
+                            color: var(--get-started-bacclr);
+                            opacity: 0.7;
+                            transition:all 0.5s;
                         }
                     }
                 }
