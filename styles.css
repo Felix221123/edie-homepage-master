@@ -546,6 +546,7 @@ footer#contact{
                 font-family: var(--fs-poppins);
                 font-weight: var(--fw-extra-light);
                 font-size: 1.125rem;
+                cursor: pointer;
             }
         }
 
